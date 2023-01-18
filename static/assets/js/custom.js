@@ -19,15 +19,15 @@
 	});
 	
 
-	$('.schedule-filter li').on('click', function() {
+	$('.benefits-filter li').on('click', function() {
         var tsfilter = $(this).data('tsfilter');
-        $('.schedule-filter li').removeClass('active');
+        $('.benefits-filter li').removeClass('active');
         $(this).addClass('active');
         if (tsfilter == 'all') {
-            $('.schedule-table').removeClass('filtering');
+            $('.benefits-table').removeClass('filtering');
             $('.ts-item').removeClass('show');
         } else {
-            $('.schedule-table').addClass('filtering');
+            $('.benefits-table').addClass('filtering');
         }
         $('.ts-item').each(function() {
             $(this).removeClass('show');
@@ -51,6 +51,16 @@
 		$(".menu-trigger").on('click', function() {	
 			$(this).toggleClass('active');
 			$('.header-area .nav').slideToggle(200);
+			//$('.header-area .nav').slideToggle(900);
+
+		});
+	}
+
+	// Menu Item Select Fix
+	if($('.menu-trigger').length){
+		$(".header-area .nav li a").on('click', function() {	
+			$('.header-area .nav').slideToggle(200);
+
 		});
 	}
 
