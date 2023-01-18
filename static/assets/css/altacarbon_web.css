@@ -342,6 +342,10 @@ header
   color: #03C11D!important;
   opacity: 1;
 }
+.background-header .main-nav .nav li:last-child a.active {
+  color: #000!important;
+  opacity: 1;
+}
 
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
@@ -465,6 +469,7 @@ header
 .header-area.header-sticky .nav li a.active {
   color: #03C11D;
 }
+
 
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
@@ -1011,7 +1016,7 @@ contact
 
 #contact-us {
   padding: 0px 0px 140px 0px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/leaves-1498985-large.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.557),rgba(0, 0, 0, 0.1)) , url(../images/leaves-1498985-large.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1032,19 +1037,20 @@ contact
 #contact-us .contact-form #contact {
   margin:  auto;
   width: 60%;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   border-radius: 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  color: #7a7a7a;
+  color: #000;
   font-size: 13px;
   border: 1px solid #ddd;
   background-color: #fff;
-  box-shadow: 4px 2px 2px #ddd;
+  opacity: 1;
+  box-shadow: 0px 0px 0px #ddd;
   width: 100%;
   height: 40px;
   outline: none;
@@ -1054,6 +1060,7 @@ contact
   -moz-appearance: none;
   appearance: none;
   margin-bottom: 30px;
+  border-radius: 5px;
 }
 
 .contact-form textarea {
@@ -1078,10 +1085,10 @@ contact
   font-size: 13px;
   padding: 11px 17px;
   background-color: #03C11D;
-  box-shadow: 4px 2px 2px #ddd;
+  box-shadow: 0px 0px 0px #ddd;
   color: #fff;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   transition: all .3s;
   border: 0px solid #000; 
