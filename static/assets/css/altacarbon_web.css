@@ -14,7 +14,7 @@ Table of contents
 03. global styles
 04. header
 05. banner
-06. features
+06. aboutus
 07. testimonials
 08. contact
 09. footer
@@ -291,8 +291,8 @@ header
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 14px;
   color: #7a7a7a;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
@@ -311,12 +311,12 @@ header
 
 .header-area .main-nav .nav li:last-child a {
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
   padding: 11px 17px;
   background-color: #03C11D;
   color: #fff;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0px;
   text-transform: uppercase;
   transition: all .3s;
@@ -670,11 +670,11 @@ banner
 
 /*
 ---------------------------------------------
-features
+aboutus
 ---------------------------------------------
 */
 
-#features {
+#aboutus {
   margin-bottom: 80px;
 }
 
@@ -754,7 +754,7 @@ Our Classes
 --------------------------------------------
 */
 
-#our-classes {
+#process {
   margin-bottom: 140px;
 }
 
@@ -844,11 +844,11 @@ Our Classes
 
 /* 
 ---------------------------------------------
-schedule
+benefits
 --------------------------------------------- 
 */
 
-#schedule {
+#benefits {
   padding: 0px 0px 140px 0px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/sea-3652697.jpg);
   background-position: center center;
@@ -856,26 +856,26 @@ schedule
   background-size: cover;
 }
 
-#schedule table {
+#benefits table {
   width: 100%;
   text-align: center;
   border: 1px solid #fff;
 }
 
-#schedule table tbody {
+#benefits table tbody {
   border-top: 1px solid #fff; 
 }
 
-#schedule table tbody tr {
+#benefits table tbody tr {
   border-bottom: 1px solid #fff;
 }
 
-#schedule table tbody tr td {
+#benefits table tbody tr td {
   border-right: 1px solid #fff;
   height: 100px;
 }
 
-#schedule table tr td p {
+#benefits table tr td p {
   color: #fff;
   font-size: 13px;
   text-transform: capitalize;
@@ -883,26 +883,26 @@ schedule
   letter-spacing: 0.25px;
 }
 
-.schedule-table.filtering .ts-item {
+.benefits-table.filtering .ts-item {
     opacity: 0.5;
 	color: #ffffff;
     transition: all 0.5s;
 }
 
-.schedule-table.filtering .ts-item.show {
+.benefits-table.filtering .ts-item.show {
     opacity: 1;
 	color: #ffffff;
     transition: all 0.5s;
 }
 
-#schedule .filters {
+#benefits .filters {
   margin-bottom: 40px;
 }
-#schedule .filters ul {
+#benefits .filters ul {
   padding: 0;
   text-align: center;
 }
-#schedule .filters ul li {
+#benefits .filters ul li {
   list-style: none;
   display: inline;
   cursor: pointer;
@@ -918,31 +918,31 @@ schedule
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#schedule .filters ul li:after {
+#benefits .filters ul li:after {
   content: "/";
   margin-left: 10px;
   color: #fff;
 }
-#schedule .filters ul li:last-child {
+#benefits .filters ul li:last-child {
   margin-right: 0px;
 }
-#schedule .filters ul li:last-child::after {
+#benefits .filters ul li:last-child::after {
   display: none;
 }
-#schedule .filters ul li.active,
-#schedule .filters ul li:hover {
+#benefits .filters ul li.active,
+#benefits .filters ul li:hover {
   color: #03C11D;
 }
-#schedule .filters-content {
+#benefits .filters-content {
   margin-top: 50px;
 }
-#schedule .filters-content .show {
+#benefits .filters-content .show {
   opacity: 1;
   color: #fff;
   visibility: visible;
   transition: all 350ms;
 }
-#schedule .filters-content .hide {
+#benefits .filters-content .hide {
   opacity: 0.5;
   color: #fff;
   visibility: hidden;
@@ -1243,13 +1243,13 @@ responsive
   .main-banner .caption h2 {
     font-size: 64px;
   }
-  #features {
+  #aboutus {
     margin-bottom: 110px;
   }
-  #features .feature-item {
+  #aboutus .feature-item {
     margin-bottom: 30px;
   }
-  #our-classes .tabs-content {
+  #process .tabs-content {
     margin-left: 0px;
     margin-top: 30px;
   }
