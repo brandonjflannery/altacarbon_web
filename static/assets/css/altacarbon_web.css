@@ -367,7 +367,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #fff;
   display: block;
   position: absolute;
   width: 30px;
@@ -378,7 +378,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -387,7 +387,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #fff;
   display: block;
   position: absolute;
   width: 30px;
@@ -398,7 +398,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -439,11 +439,11 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -451,11 +451,11 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .header-area.header-sticky {
@@ -483,7 +483,7 @@ header
 
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
-    color: #1e1e1e;
+    color: #fff;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -491,7 +491,7 @@ header
     opacity: 1;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background-color: rgba(0, 0, 0, .55);
     padding: 0px 15px;
     height: 80px;
     box-shadow: none;
@@ -526,7 +526,7 @@ header
     width: 100%;
     background-color: #03C11D;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 0px;
   }
   .header-area .main-nav .nav li:last-child a {
     background-color: #03C11D!important;
@@ -750,7 +750,7 @@ subscribe
 
 /*
 --------------------------------------------
-Our Classes
+Our Process
 --------------------------------------------
 */
 
@@ -884,14 +884,14 @@ benefits
 }
 
 .benefits-table.filtering .ts-item {
-    opacity: 0.5;
-	color: #ffffff;
+    opacity: 1;
+	  color: #ffffff;
     transition: all 0.5s;
 }
 
 .benefits-table.filtering .ts-item.show {
     opacity: 1;
-	color: #ffffff;
+	  color: #ffffff;
     transition: all 0.5s;
 }
 
@@ -909,7 +909,7 @@ benefits
   position: relative;
   margin-right: 10px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease-in-out;
@@ -919,7 +919,7 @@ benefits
   transition: all 0.3s ease-in-out;
 }
 #benefits .filters ul li:after {
-  content: "/";
+  content: "|";
   margin-left: 10px;
   color: #fff;
 }
@@ -931,7 +931,7 @@ benefits
 }
 #benefits .filters ul li.active,
 #benefits .filters ul li:hover {
-  color: #03C11D;
+  color: #fff;
 }
 #benefits .filters-content {
   margin-top: 50px;
@@ -947,6 +947,41 @@ benefits
   color: #fff;
   visibility: hidden;
   transition: all 350ms;
+}
+
+@media (max-width: 767px) {
+  #benefits .filters ul li.active,
+  #benefits .filters ul li:hover {
+    color: #fff;
+  }
+
+  #benefits .filters-content .show,
+  #benefits .filters-content .hide {
+    opacity: 1;
+    color: #fff;
+    visibility: visible;
+    transition: all 350ms;
+  }
+
+  #benefits table tr td p {
+    color: #fff;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+  }
+  .benefits-table.filtering .ts-item {
+      opacity: 1;
+      color: #ffffff;
+      transition: all 0.5s;
+  }
+
+  .benefits-table.filtering .ts-item.show {
+      opacity: 1;
+      color: #ffffff;
+      transition: all 0.5s;
+  }
+
 }
 
 
@@ -1016,7 +1051,7 @@ contact
 
 #contact-us {
   padding: 0px 0px 140px 0px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.557),rgba(0, 0, 0, 0.1)) , url(../images/leaves-1498985-large.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.657),rgba(0, 0, 0, 0.1)) , url(../images/leaves-1498985-large.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1101,8 +1136,16 @@ contact
   background-color: #0dc11d;
 }
 
-
-
+@media (max-width: 767px) {
+  #contact-us .contact-form #contact {
+    margin:  auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 0px solid #ddd;
+    border-radius: 10px;
+  }
+}
 
 /* 
 ---------------------------------------------
