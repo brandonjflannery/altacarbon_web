@@ -1,5 +1,4 @@
 Flask
 gunicorn
-smtplib
 pandas
 dotenv
