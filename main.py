@@ -1,8 +1,5 @@
 from flask import Flask, render_template, request, flash
 import smtplib
-import pandas as pd
-from dotenv import load_dotenv   #for python-dotenv method
-load_dotenv()
 import os
 
 ### SMTP ARGS ###
