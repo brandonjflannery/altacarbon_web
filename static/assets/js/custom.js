@@ -41,6 +41,9 @@
 	// Window Resize Mobile Menu Fix
 	mobileNav();
 
+	// Window Resize Mobile Video Fix
+	mobileVideo();
+
 
 	// Scroll animation init
 	window.sr = new scrollReveal();
@@ -114,9 +117,10 @@
     });
 
 
-	// Window Resize Mobile Menu Fix
+	// Window Resize Mobile Fix
 	$(window).on('resize', function() {
 		mobileNav();
+		mobileVideo();
 	});
 
 
@@ -130,6 +134,16 @@
 			}
 		});
 	}
+
+	// Window Resize Mobile Video Fix
+	function mobileVideo() {
+		var width = $(window).width();
+		if(width < 767) {
+			$( "video" ).remove();
+		}
+	}
+
+   
 
 
 })(window.jQuery);

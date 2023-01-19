@@ -604,6 +604,16 @@ banner
   position: relative;
 }
 
+#bg-img {
+    display: none;
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
 #bg-video {
     min-width: 100%;
     min-height: 100vh;
@@ -659,6 +669,27 @@ banner
   color: #03C11D;
   font-weight: 900;
 }
+
+@media (max-width: 767px) {
+  #bg-img {
+    display: block;
+}
+
+  #bg-video {
+      display: none;
+  }
+  .video-overlay {
+    position: absolute;
+    background-color: rgba(35,45,57,0.3);
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+}
+}
+
+
+
 
 
 /*
