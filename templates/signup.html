@@ -1,0 +1,56 @@
+{% extends "base_auth.html" %}
+
+{% block content_auth %}
+<!-- ***** Signup Area Starts ***** -->
+<section class="section" id="signup">
+    <div class="container-fluid">
+  <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading dark-bg">
+                  <h2>Sign Up</h2>
+                  <p>Please fill out the form below</p>
+                </div>
+                <div class="signup-form">
+                  {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                      <div class="notification is-danger">
+                          <p>{{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>.</p>
+                      </div>
+                  <!-- {% endif %} -->
+                  {% endwith %}
+                    <form id="signup-post" action="/signup" method="post">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <fieldset>
+                            <input name="name" type="text" id="name" placeholder="Name*" required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                          <fieldset>
+                            <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email*" required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                          <fieldset>
+                            <input name="password" type="password" id="password" placeholder="Password">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                          <fieldset>
+                            <input name="password_confirm" type="password" id="password_confirm" placeholder="Confirm Password">
+                          </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                          <fieldset>
+                            <button type="submit" id="form-submit" class="main-button">Sign Up</button>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </form>
+      </div>
+    </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Signup Area Ends ***** -->
+{% endblock %}

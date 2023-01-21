@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content_base %}
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="{{ url_for('main.index') }}" class="logo me-auto me-lg-0"><img src="assets/images/Altacarbon-1-small.png" alt="" class="img-fluid"></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="{{ url_for('main.index') }}">Home</a></li> 
+                            <li><a href="{{ url_for('auth.login') }}">Login</a></li> 
+                            <li><a href="{{ url_for('auth.signup') }}">Sign Up</a></li> 
+                            <!-- <li class="main-button"><a href="#"></a></li> -->
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Block Content for Extension ***** -->
+    {% block content_auth %}
+    {% endblock %}
+    <!-- ***** Block Content End ***** -->
+
+
+{% endblock %}
